@@ -1,4 +1,4 @@
-package com.example.statuscheck.controller;
+package com.maxs.payment.controller;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class StatusControllerTest {
+class PaymentControllerTest {
 
     @Autowired
     private MockMvc mockMvc;

@@ -1,6 +1,6 @@
-package com.example.statuscheck.controller;
+package com.maxs.payment.controller;
 
-import com.example.statuscheck.service.StatusService;
+import com.maxs.payment.service.PaymentService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,16 +10,16 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
-public class StatusController {
+public class PaymentController {
 
-    private final StatusService statusService;
+    private final PaymentService paymentService;
 
-    public StatusController(StatusService statusService) {
-        this.statusService = statusService;
+    public PaymentController(PaymentService paymentService) {
+        this.paymentService = paymentService;
     }
 
     @GetMapping("/status")
     public ResponseEntity<Map<String, Object>> status() {
-        return ResponseEntity.ok(statusService.getStatus());
+        return ResponseEntity.ok(paymentService.getStatus());
     }
 }

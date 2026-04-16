@@ -1,4 +1,4 @@
-package com.example.statuscheck.service;
+package com.maxs.payment.service;
 
 import org.springframework.stereotype.Service;
 
@@ -6,7 +6,7 @@ import java.time.Instant;
 import java.util.Map;
 
 @Service
-public class StatusService {
+public class PaymentService {
 
     public Map<String, Object> getStatus() {
         return Map.of(
